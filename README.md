@@ -1,12 +1,12 @@
 # marineHeatwave
-
+<hr>
 
 ### Cloning Git Repository
 1. In GitHub, click "<>Code" and in the drop-down, copy the HTTPS link.
 2. Go to the folder in your desktop where you want to put this file in, open the folder in your terminal (right-click the folder name -> click "Open in Terminal").
 3. In your terminal, type "git clone" and paste the link. The folder should now cloned into your local environment.
 
-</br>
+<hr>
 
 ### Setting Your Environment
 Put your environment variable set in a `.env` file in your working directory.
@@ -17,7 +17,7 @@ AWS_ACCESS_KEY_ID = PUT YOUR ACCESS KEY ID,
 AWS_SECRET_ACCESS_KEY = PUT YOUR SECRET ACCESS KEY
 ```
 
-</br>
+<hr>
 
 ### Data Requirement For Using The Functions
 [**ts2clm( )**](https://robwschlegel.github.io/heatwaveR/reference/ts2clm.html)
@@ -38,6 +38,8 @@ Creates a **daily climatology** from a time series of daily temperatures using a
 
 -   **Avoid having duplicated rows or replicate** temperature readings per day.
 
+</br>   
+
 [**detect_event()**](https://robwschlegel.github.io/heatwaveR/reference/detect_event.html)
 
 -   Need to use the **output from ts2clm()**.
@@ -45,6 +47,8 @@ Creates a **daily climatology** from a time series of daily temperatures using a
 -   Data frame need to be at least four columns (expected to have headers **t, temp, seas, thresh**).
 
 -   The default minimum duration for acceptance of detected events is 5 days.
+
+</br>
 
 [**event_line()**](https://robwschlegel.github.io/heatwaveR/reference/event_line.html)
 
@@ -54,6 +58,8 @@ Creates a line plot of heatwaves or cold-spells.
 
 -   spread: the number of days leading and trailing the largest event (as per `metric`) detected within the time period specified by `start_date` and `end_date`. The default is 150 days.
 
+</br>
+
 [**exceedance()**](https://robwschlegel.github.io/heatwaveR/reference/exceedance.html)
 
 Detect consecutive days in exceedance above or below of a given threshold (temperature).
@@ -62,7 +68,7 @@ Detect consecutive days in exceedance above or below of a given threshold (tempe
 
 -   The function will return a list of two data.frames. The first being **threshold**, which shows the **daily temperatures** and on which **specific days the given threshold was exceeded**. The second component of the list is **exceedance**, which shows a medley of **statistics** for each discrete group of days in exceedance of the given exceedance.
 
-</br>
+<hr>
 
 ### Running The Code
 
@@ -72,6 +78,8 @@ If you prefer to use the `.Rmd` file provided, it is advised that you open it in
 After you do that, you could run the code chunk accordingly to the instructions in the `.Rmd` file.
 
 **REMEMBER TO SET YOUR WORKING DIRECTORY TO THE RESPECTIVE FOLDER IF YOU ARE USING R/R STUDIO.**
+
+</br>
 
 #### 2. Using R code
 If you prefer to use the `.R` code provided, you could open them in any editor.
@@ -85,7 +93,7 @@ Run the `.R` file as follows:
 4. Run the `4_EventDetection.R` for function to calculate climatology and detect Marine Heatwave (MHW) events.
 5. Run the R code staring with `5_Plotting_` for plotting the graph you require.
 
-</br>
+<hr>
 
 ### Library Used
    - [dplyr](https://rdocumentation.org/packages/dplyr/versions/1.0.10)
@@ -94,7 +102,9 @@ Run the `.R` file as follows:
    - [patchwork](https://www.rdocumentation.org/packages/patchwork/versions/1.2.0/topics/patchwork-package)
    - [aws.s3](https://rdocumentation.org/packages/aws.s3/versions/0.3.21)
 
-</br>
+<hr>
 
 #### **References**
 Schlegel RW, Smit AJ (2018). “heatwaveR: A central algorithm for the detection of heatwaves and cold-spells.” Journal of Open Source Software, 3(27), 821. doi:10.21105/joss.00821.[heatwaveR package](https://robwschlegel.github.io/heatwaveR/index.html).
+
+<hr>
