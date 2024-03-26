@@ -19,7 +19,7 @@ AWS_SECRET_ACCESS_KEY = PUT YOUR SECRET ACCESS KEY
 
 <hr>
 
-### Data Requirement For Using The Functions
+### Requirement And Explanation For Some Functions
 [**ts2clm( )**](https://robwschlegel.github.io/heatwaveR/reference/ts2clm.html)
 
 Creates a **daily climatology** from a time series of daily temperatures using a user-specified sliding window for the mean and threshold calculation.
