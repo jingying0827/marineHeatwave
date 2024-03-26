@@ -19,7 +19,7 @@ AWS_SECRET_ACCESS_KEY = PUT YOUR SECRET ACCESS KEY
 
 <hr>
 
-### Data Requirement For Using The Functions
+### Requirement And Explanation For Some Functions
 [**ts2clm( )**](https://robwschlegel.github.io/heatwaveR/reference/ts2clm.html)
 
 Creates a **daily climatology** from a time series of daily temperatures using a user-specified sliding window for the mean and threshold calculation.
@@ -42,9 +42,11 @@ Creates a **daily climatology** from a time series of daily temperatures using a
 
 [**detect_event()**](https://robwschlegel.github.io/heatwaveR/reference/detect_event.html)
 
--   Need to use the **output from ts2clm()**.
+Detects the events based on the climatology calculated.
 
--   Data frame need to be at least four columns (expected to have headers **t, temp, seas, thresh**).
+-   Need to use the **output from `ts2clm()`**.
+
+-   Data frame need to be at least four columns (expected to have headers **`t`, `temp`, `seas`, `thresh`**).
 
 -   The default minimum duration for acceptance of detected events is 5 days.
 
@@ -54,7 +56,7 @@ Creates a **daily climatology** from a time series of daily temperatures using a
 
 Creates a line plot of heatwaves or cold-spells.
 
--   **metric**: tells the function how to choose the event that should be highlighted as the 'greatest' of the events in the chosen period. (Default: intensity_cumulative). You may choose from the following options: **`intensity_mean`**, **`intensity_max`**, **`intensity_var`**,**`intensity_cumulative`**, **`intensity_mean_relThresh`**, **`intensity_max_relThresh`**, **`intensity_var_relThresh`**, **`intensity_cumulative_relThresh`**, **`intensity_mean_abs`**, **`intensity_max_abs`**, **`intensity_var_abs`**, **`intensity_cumulative_abs`**, **`rate_onset`**, **`rate_decline`**.
+-   metric: tells the function how to choose the event that should be highlighted as the 'greatest' of the events in the chosen period. (Default: intensity_cumulative).
 
 -   spread: the number of days leading and trailing the largest event (as per `metric`) detected within the time period specified by `start_date` and `end_date`. The default is 150 days. 
 
@@ -77,19 +79,17 @@ Detect consecutive days in exceedance above or below of a given threshold (tempe
 
 ### Running The Code
 
+***IMPORTANT: Remember to set your working directory to the respective folder before you do anything.***
+
 #### 1. Using R markdown
 If you prefer to use the `.Rmd` file provided, it is advised that you open it in **R Studio**, and turn the **Visual** mode on.
 
 After you do that, you could run the code chunk accordingly to the instructions in the `.Rmd` file.
 
-**REMEMBER TO SET YOUR WORKING DIRECTORY TO THE RESPECTIVE FOLDER IF YOU ARE USING R/R STUDIO.**
-
 </br>
 
 #### 2. Using R code
 If you prefer to use the `.R` code provided, you could open them in any editor.
-
-**REMEMBER TO SET YOUR WORKING DIRECTORY TO THE RESPECTIVE FOLDER IF YOU ARE USING R/R STUDIO.**
 
 Run the `.R` file as follows:
 1. After setting your working directory, run the `1_DataExtraction:LibraryPackage.R`. You should not have the whole dataset loaded as `Rawdata`.
