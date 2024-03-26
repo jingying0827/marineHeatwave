@@ -1,13 +1,12 @@
 # DATA EXTRACTION FROM PAWSEY/ LIBRARY PACKAGE USED
-# Run this code chunk only once to read in the data file and load the library needed, you do not need to run this after you change variable.
 
-## Library needed
+# Library needed
 library(dplyr)
 library(ggplot2)
 library(heatwaveR)
 library(patchwork)
 
-## Data Extraction
+# Data Extraction
 library('aws.s3')
 Sys.setenv('USE_HTTPS' = TRUE)
 
