@@ -42,9 +42,9 @@ Creates a **daily climatology** from a time series of daily temperatures using a
 
 [**detect_event()**](https://robwschlegel.github.io/heatwaveR/reference/detect_event.html)
 
--   Need to use the **output from ts2clm()**.
+-   Need to use the **output from `ts2clm()`**.
 
--   Data frame need to be at least four columns (expected to have headers **t, temp, seas, thresh**).
+-   Data frame need to be at least four columns (expected to have headers **`t`, `temp`, `seas`, `thresh`**).
 
 -   The default minimum duration for acceptance of detected events is 5 days.
 
@@ -54,7 +54,7 @@ Creates a **daily climatology** from a time series of daily temperatures using a
 
 Creates a line plot of heatwaves or cold-spells.
 
--   metric: tells the function how to choose the event that should be highlighted as the 'greatest' of the events in the chosen period. (Default: intensity_cumulative).
+-   metric: tells the function how to choose the event that should be highlighted as the 'greatest' of the events in the chosen period. (Default: `intensity_cumulative`).
 
 -   spread: the number of days leading and trailing the largest event (as per `metric`) detected within the time period specified by `start_date` and `end_date`. The default is 150 days.
 
