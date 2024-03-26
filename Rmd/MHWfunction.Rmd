@@ -73,40 +73,6 @@ Rawdata <- awss3Connect(filename = 'arms/wiski.csv')
 
 Run this code chunk **only once** to run the functions to be used, you do not need to run this after you change variable.
 
-```{r NOTINUSE_SelectFullYearsTimeFrame}
-detect_events <- function(interpolated_data) {
-  # Extract start and end dates
-  start_date <- min(interpolated_data$t)
-  end_date <- max(interpolated_data$t)
-  
-  # Extract start and end years
-  start_year <- as.numeric(format(start_date, "%Y"))
-  end_year <- as.numeric(format(end_date, "%Y"))
-  
-  # Extract start and end month and day
-  start_month_day <- format(start_date, "%m-%d")
-  end_month_day <- format(end_date, "%m-%d")
-  
-  test_start_date <- as.Date(paste0(start_year,"-", end_month_day))
-  test_end_date <- as.Date(paste0(end_year, "-",start_month_day))
-  
-  if ((max(test_end_date, end_date)-max(test_start_date, start_date)) > (min(test_end_date, end_date)-min(test_start_date, start_date))){
-    clima_start_date <- max(test_start_date, start_date)
-    clima_end_date <- max(test_end_date, end_date)
-  } else {
-    clima_start_date <- min(test_start_date, start_date)
-    clima_end_date <- min(test_end_date, end_date)
-  }
-  
-  climatologyPeriod <- c(clima_start_date, clima_end_date)
-  
-  ts <- ts2clm(interpolated_data, climatologyPeriod = climatologyPeriod)
-  mhw <- detect_event(ts)
-  
-  return(mhw)
-}
-```
-
 ```{r FunctionsUsed}
 # Data Cleaning Functions
 clean_data <- function(raw_data, swansites, depth) {
