@@ -1,10 +1,8 @@
 # marineHeatwave
 <hr>
 
-### Cloning Git Repository
-1. In GitHub, click "<>Code" and in the drop-down, copy the HTTPS link.
-2. Go to the folder in your desktop where you want to put this file in, open the folder in your terminal (right-click the folder name -> click "Open in Terminal").
-3. In your terminal, type "git clone" and paste the link. The folder should now cloned into your local environment.
+### Clone This Repository
+`git clone https://github.com/jingying0827/marineHeatwave.git`
 
 <hr>
 
