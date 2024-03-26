@@ -2,7 +2,7 @@
 <hr>
 
 ### Clone This Repository
-`git clone https://github.com/jingying0827/marineHeatwave.git`
+`git clone --recurse-submodules https://github.com/jingying0827/marineHeatwave.git`
 
 <hr>
 
