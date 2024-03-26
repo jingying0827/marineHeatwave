@@ -56,7 +56,7 @@ Detects the events based on the climatology calculated.
 
 Creates a line plot of heatwaves or cold-spells.
 
--   metric: tells the function how to choose the event that should be highlighted as the 'greatest' of the events in the chosen period. (Default: intensity_cumulative).
+-   metric: tells the function how to choose the event that should be highlighted as the 'greatest' of the events in the chosen period. (Default: intensity_cumulative). You may choose from the following options: **`intensity_mean`**, **`intensity_max`**, **`intensity_var`**,**`intensity_cumulative`**, **`intensity_mean_relThresh`**, **`intensity_max_relThresh`**, **`intensity_var_relThresh`**, **`intensity_cumulative_relThresh`**, **`intensity_mean_abs`**, **`intensity_max_abs`**, **`intensity_var_abs`**, **`intensity_cumulative_abs`**, **`rate_onset`**, **`rate_decline`**.
 
 -   spread: the number of days leading and trailing the largest event (as per `metric`) detected within the time period specified by `start_date` and `end_date`. The default is 150 days. 
 
