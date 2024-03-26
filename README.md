@@ -62,6 +62,7 @@ The plot may not necessarily correspond to the biggest event of the specified me
 
 To plot the largest event within the whole time series, make sure you chose the **`start_date`** and **`end_date`** that cover the whole time series.
   
+
 </br>
 
 [**exceedance()**](https://robwschlegel.github.io/heatwaveR/reference/exceedance.html)
