@@ -81,6 +81,8 @@ Detect consecutive days in exceedance above or below of a given threshold (tempe
 
 ***IMPORTANT: Remember to set your working directory to the respective folder before you do anything.***
 
+</br>
+
 #### 1. Using R markdown
 If you prefer to use the `.Rmd` file provided, it is advised that you open it in **R Studio**, and turn the **Visual** mode on.
 
