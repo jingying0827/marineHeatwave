@@ -1,0 +1,71 @@
+url: https://robwschlegel.github.io/heatwaveR/index.html
+
+navbar:
+  title: heatwaveR
+  type: default
+  left:
+  - icon: fa-home fa-lg
+    href: index.html
+  - text: "Reference"
+    href: reference/index.html
+  - text: "Vignettes"
+    menu:
+    - text: "Basic Detection and Visualisation of Events"
+      href: articles/detection_and_visualisation.html
+    - text: "Calculating and Visualising Event Categories"
+      href: articles/event_categories.html
+    - text: "Calculating and Visualising Exceedances"
+      href: articles/exceedance.html
+    - text: "Alternative Thresholds"
+      href: articles/complex_clims.html
+    - text: "Trend and Breakpoint Analyses"
+      href: articles/MHW_metric_trends.html
+    - text: "Downloading and Preparing OISST Data"
+      href: articles/OISST_preparation.html
+    - text: "Detecting Events in Gridded Data"
+      href: articles/gridded_event_detection.html
+    - text: "Download, Prepare, and Analyse Data: Alternative"
+      href: articles/Download_SST_v2.html
+    - text: "Saving MHW Results to NetCDF"
+      href: articles/MHW_to_nc.html
+  - text: "Tutorial"
+    href: http://193.50.85.71:3838/demoMHW/
+  - text: "Citations"
+    href: CITATIONS.html
+  - text: "News"
+    href: news/index.html
+  right:
+  - icon: fa-github fa-lg
+    text: "github"
+    href: https://github.com/robwschlegel/heatwaveR
+
+reference:
+- title: Functions
+  desc: ~
+  contents:
+  - '`ts2clm`'
+  - '`ts2clm3`'
+  - '`detect_event`'
+  - '`detect_event3`'
+  - '`block_average`'
+  - '`category`'
+  - '`exceedance`'
+  - '`event_line`'
+  - '`lolli_plot`'
+  - '`geom_flame`'
+  - '`geom_lolli`'
+- title: Data
+  desc: ~
+  contents:
+  - '`Algiers`'
+  - '`sst_Med`'
+  - '`sst_NW_Atl`'
+  - '`sst_WA`'
+
+template:
+  params:
+    bootswatch: spacelab
+    ganalytics: UA-118123016-1
+    docsearch:
+      api_key: '2edc7627dae0471f3d765c3355bebbf3'
+      index_name: 'heatwaver'

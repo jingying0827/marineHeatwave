@@ -1,0 +1,3 @@
+[submodule "heatwaveR"]
+	path = heatwaveR
+	url = https://github.com/jingying0827/heatwaveR.git
