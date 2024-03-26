@@ -74,19 +74,17 @@ Detect consecutive days in exceedance above or below of a given threshold (tempe
 
 ### Running The Code
 
+***IMPORTANT: Remember to set your working directory to the respective folder before you do anything.***
+
 #### 1. Using R markdown
 If you prefer to use the `.Rmd` file provided, it is advised that you open it in **R Studio**, and turn the **Visual** mode on.
 
 After you do that, you could run the code chunk accordingly to the instructions in the `.Rmd` file.
 
-**REMEMBER TO SET YOUR WORKING DIRECTORY TO THE RESPECTIVE FOLDER IF YOU ARE USING R/R STUDIO.**
-
 </br>
 
 #### 2. Using R code
 If you prefer to use the `.R` code provided, you could open them in any editor.
-
-**REMEMBER TO SET YOUR WORKING DIRECTORY TO THE RESPECTIVE FOLDER IF YOU ARE USING R/R STUDIO.**
 
 Run the `.R` file as follows:
 1. After setting your working directory, run the `1_DataExtraction:LibraryPackage.R`. You should not have the whole dataset loaded as `Rawdata`.
