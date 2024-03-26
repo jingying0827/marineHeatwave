@@ -1,12 +1,43 @@
 # marineHeatwave
 
-#### **Cloning Git Repository**
-1. In GitHub, click "<>Code" and in the drop-down, copy the HTTPS link.
-2. Go to the folder in your desktop where you want to put this file in, open the folder in your terminal (right-click the folder name -> click "Open in Terminal".
-3. In your terminal 
-------------------------------------------------------------------------
 
-------------------------------------------------------------------------
+#### Cloning Git Repository
+1. In GitHub, click "<>Code" and in the drop-down, copy the HTTPS link.
+2. Go to the folder in your desktop where you want to put this file in, open the folder in your terminal (right-click the folder name -> click "Open in Terminal").
+3. In your terminal, type "git clone" and paste the link. The folder should now cloned into your local environment.
+
+</br>
+
+#### Setting Your Environment
+Put your environment variable set in a `.env` file in your folder.
+```
+AWS_DEFAULT_REGION = '', 
+AWS_S3_ENDPOINT = 'projects.pawsey.org.au', 
+AWS_ACCESS_KEY_ID = PUT YOUR ACCESS KEY ID, 
+AWS_SECRET_ACCESS_KEY = PUT YOUR SECRET ACCESS KEY
+```
+
+</br>
+
+### Running The Code
+
+[!IMPORTANT]
+Key information users need to know to achieve their goal.
+
+#### 1. Using R markdown
+If you prefer to use the `.Rmd` file provided, it is advised that you open it in **R Studio**, and turn the **Visual** mode on.
+
+After you do that, you could run the code chunk accordingly to the instructions in the `.Rmd` file.
+
+#### 2. Using R code
+If you prefer to use the `.R` code provided, you could open them in any editor.
+
+Run the `.R` file as follows:
+
+
+#### **References**
+Schlegel RW, Smit AJ (2018). “heatwaveR: A central algorithm for the detection of heatwaves and cold-spells.” Journal of Open Source Software, 3(27), 821. doi:10.21105/joss.00821.[heatwaveR package](https://robwschlegel.github.io/heatwaveR/index.html).
+
 #### **DATA EXTRACTION FROM PAWSEY/ LIBRARY PACKAGE USED**
 
 Run this code chunk **only once** to read in the data file and load the library needed, you do not need to run this after you change variable.
