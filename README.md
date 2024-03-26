@@ -34,7 +34,7 @@ Creates a **daily climatology** from a time series of daily temperatures using a
 
 -   This function assumes that the input time series consists of **continuous daily values** with few missing values.
 
--   It is further advised that full the start and end dates for the climatology period result in **full years**, if applicable.
+-   It is further advised that full the start and end dates for the climatology period result in **full years**.
 
 -   **Avoid having duplicated rows or replicate** temperature readings per day.
 
