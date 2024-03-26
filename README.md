@@ -109,7 +109,7 @@ Run the `.R` file as follows:
 
 <hr>
 
-#### **References**
+### **References**
 Schlegel RW, Smit AJ (2018). “heatwaveR: A central algorithm for the detection of heatwaves and cold-spells.” Journal of Open Source Software, 3(27), 821. doi:10.21105/joss.00821.[heatwaveR package](https://robwschlegel.github.io/heatwaveR/index.html).
 
 <hr>
