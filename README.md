@@ -42,6 +42,8 @@ Creates a **daily climatology** from a time series of daily temperatures using a
 
 [**detect_event()**](https://robwschlegel.github.io/heatwaveR/reference/detect_event.html)
 
+Detects the events based on the climatology calculated.
+
 -   Need to use the **output from `ts2clm()`**.
 
 -   Data frame need to be at least four columns (expected to have headers **`t`, `temp`, `seas`, `thresh`**).
